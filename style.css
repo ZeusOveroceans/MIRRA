@@ -1,0 +1,119 @@
+html {
+  height: 100%;
+  width: 100%;
+  
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  :root {
+    --background: hsl(0, 0%, 100%);
+    --foreground: hsl(142, 71%, 12%);
+    --muted: hsl(60, 4.8%, 95.9%);
+    --muted-foreground: hsl(25, 5.3%, 44.7%);
+    --popover: hsl(0, 0%, 100%);
+    --popover-foreground: hsl(142, 71%, 12%);
+    --card: hsl(0, 0%, 100%);
+    --card-foreground: hsl(142, 71%, 12%);
+    --border: hsl(20, 5.9%, 90%);
+    --input: hsl(20, 5.9%, 90%);
+    --primary: hsl(123, 46%, 34%);
+    --primary-foreground: hsl(120, 100%, 99%);
+    --secondary: hsl(88, 50%, 53%);
+    --secondary-foreground: hsl(142, 71%, 12%);
+    --accent: hsl(88, 50%, 53%);
+    --accent-foreground: hsl(142, 71%, 12%);
+    --destructive: hsl(0, 84.2%, 60.2%);
+    --destructive-foreground: hsl(60, 9.1%, 97.8%);
+    --ring: hsl(142, 71%, 12%);
+    --radius: 0.5rem;
+
+    /* Farm-specific colors */
+    --farm-green: hsl(123, 46%, 34%);
+    --fresh-lime: hsl(88, 50%, 53%);
+    --harvest-orange: hsl(36, 100%, 50%);
+    --light-green-bg: hsl(104, 48%, 94%);
+    --dark-green-text: hsl(142, 71%, 12%);
+    --earth-brown: hsl(15, 25%, 47%);
+  }
+
+  .dark {
+    --background: hsl(240, 10%, 3.9%);
+    --foreground: hsl(0, 0%, 98%);
+    --muted: hsl(240, 3.7%, 15.9%);
+    --muted-foreground: hsl(240, 5%, 64.9%);
+    --popover: hsl(240, 10%, 3.9%);
+    --popover-foreground: hsl(0, 0%, 98%);
+    --card: hsl(240, 10%, 3.9%);
+    --card-foreground: hsl(0, 0%, 98%);
+    --border: hsl(240, 3.7%, 15.9%);
+    --input: hsl(240, 3.7%, 15.9%);
+    --primary: hsl(123, 46%, 34%);
+    --primary-foreground: hsl(120, 100%, 99%);
+    --secondary: hsl(240, 3.7%, 15.9%);
+    --secondary-foreground: hsl(0, 0%, 98%);
+    --accent: hsl(240, 3.7%, 15.9%);
+    --accent-foreground: hsl(0, 0%, 98%);
+    --destructive: hsl(0, 62.8%, 30.6%);
+    --destructive-foreground: hsl(0, 0%, 98%);
+    --ring: hsl(240, 4.9%, 83.9%);
+    --radius: 0.5rem;
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+
+    body {
+      @apply font-sans antialiased bg-background text-foreground;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+
+  @layer utilities {
+    .bg-farm-green {
+      background-color: var(--farm-green);
+    }
+
+    .text-farm-green {
+      color: var(--farm-green);
+    }
+
+    .bg-fresh-lime {
+      background-color: var(--fresh-lime);
+    }
+
+    .text-fresh-lime {
+      color: var(--fresh-lime);
+    }
+
+    .bg-harvest-orange {
+      background-color: var(--harvest-orange);
+    }
+
+    .text-harvest-orange {
+      color: var(--harvest-orange);
+    }
+
+    .bg-light-green-bg {
+      background-color: var(--light-green-bg);
+    }
+
+    .text-dark-green-text {
+      color: var(--dark-green-text);
+    }
+
+    .bg-earth-brown {
+      background-color: var(--earth-brown);
+    }
+
+    .text-earth-brown {
+      color: var(--earth-brown);
+    }
+  }}
