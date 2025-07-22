@@ -8,6 +8,7 @@ created. I began an attempt to reconstruct the templates I had created with the 
 upload them to my GitHub for future employers to be able to view my growth and capabilities in website design and management. 
 
 **By Clicking the "View More" button on the home page you will find the Climate Smart Farm page I created**
+
 **By hovering over "Media Center" in the header and clicking "Blog" you will find the blog page I created with intentions of integrating all of the information within their media center**
 
 Thank you all for viewing my work and growth. I look forward to hearing from you soon.
